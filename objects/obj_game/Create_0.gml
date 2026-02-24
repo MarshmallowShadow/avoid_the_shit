@@ -5,9 +5,9 @@ spawn_timer = 0;
 
 // Poop spawn frquency based on difficulty
 switch global.difficulty {
-	case "hard": spawn_timer = 2;
-	case "medium": spawn_timer = 5;
-	default: spawn_timer = 10;
+	case "hard": spawn_timer = 10; break;
+	case "medium": spawn_timer = 20; break;
+	default: spawn_timer = 30; break;
 }
 
 alarm[0] = spawn_timer; // Timer for poop spawning randomly
